@@ -97,7 +97,7 @@ func _process(delta: float) -> void:
 
 func is_valid_position(position: Vector2) -> bool:
 	#Restringe o clique apenas a região do tabuleiro
-	return position.x >= 5 and position.x < 85 and position.y >= 40 and position.y < 120
+	return position.x >= 3 and position.x < 83 and position.y >= 42 and position.y < 122
 
 func swap_tiles(tile_src, tile_dst):
 	#Troca de posição da peça pelo espaço vazio no sprite
