@@ -1,0 +1,125 @@
+[gd_scene load_steps=9 format=3 uid="uid://o3ngn8x5fefs"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_akkna"]
+[ext_resource type="Script" path="res://scripts/board.gd" id="2_3yvai"]
+[ext_resource type="Texture2D" uid="uid://be8f2aympqlwf" path="res://sprites/Tiles/tile1_maca.png" id="3_knudp"]
+[ext_resource type="Texture2D" uid="uid://6ulci2ifl7a8" path="res://sprites/Tiles/tile_banana.png" id="4_2otbe"]
+[ext_resource type="Texture2D" uid="uid://bcqof1ut1afnf" path="res://sprites/Tiles/tile_laranja.png" id="5_2tscy"]
+[ext_resource type="Texture2D" uid="uid://cvlvmd61uyjoc" path="res://sprites/Tiles/tile_uva.png" id="6_ylsfw"]
+[ext_resource type="Texture2D" uid="uid://0a5881i24tf6" path="res://sprites/Tiles/tile.png" id="7_78qnd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nq1ux"]
+size = Vector2(80, 80)
+
+[node name="Main" type="Area2D"]
+script = ExtResource("1_akkna")
+
+[node name="Board" type="Area2D" parent="."]
+position = Vector2(5, 40)
+script = ExtResource("2_3yvai")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board"]
+position = Vector2(40, 40)
+shape = SubResource("RectangleShape2D_nq1ux")
+
+[node name="Tile1" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(10, 10)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_knudp")
+
+[node name="Tile2" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(30, 10)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_knudp")
+
+[node name="Tile3" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(50, 10)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_knudp")
+
+[node name="Tile4" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(70, 10)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_knudp")
+
+[node name="Tile5" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(10, 30)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_2otbe")
+
+[node name="Tile6" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(30, 30)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_2otbe")
+
+[node name="Tile7" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(50, 30)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_2otbe")
+
+[node name="Tile8" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(70, 30)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_2otbe")
+
+[node name="Tile9" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(10, 50)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_2tscy")
+
+[node name="Tile10" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(30, 50)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_2tscy")
+
+[node name="Tile11" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(50, 50)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_2tscy")
+
+[node name="Tile12" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(70, 50)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_2tscy")
+
+[node name="Tile13" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(10, 70)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_ylsfw")
+
+[node name="Tile14" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(30, 70)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_ylsfw")
+
+[node name="Tile15" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(50, 70)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_ylsfw")
+
+[node name="Tile16" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(70, 70)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_78qnd")
+
+[node name="Character" type="Node2D" parent="."]
+position = Vector2(45, 20)
+
+[node name="Username" type="Node2D" parent="."]
+position = Vector2(36, 1)

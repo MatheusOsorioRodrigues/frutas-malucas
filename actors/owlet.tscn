@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://bh6p3mk2qusbn"]
+
+[ext_resource type="Texture2D" uid="uid://cd1ms2q7x42l2" path="res://sprites/2 Owlet_Monster/Owlet_Monster_Idle_4.png" id="1_32t2c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p2o1r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uuoji"]
+atlas = ExtResource("1_32t2c")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dneo"]
+atlas = ExtResource("1_32t2c")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vms48"]
+atlas = ExtResource("1_32t2c")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ukot"]
+atlas = ExtResource("1_32t2c")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dekrl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uuoji")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dneo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vms48")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ukot")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Owlet" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_p2o1r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_dekrl")
+autoplay = "default"
+frame_progress = 0.676186
