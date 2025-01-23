@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwsmcjjc876a2"
-path="res://.godot/imported/tile_maca.png-dd1f984cdd36bac3d1b6da47f8c03b8a.ctex"
+uid="uid://cteey5b01l17c"
+path="res://.godot/imported/fence.png-24ed3f51ca1697467c6969f2bdfb1048.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Tiles/tile_maca.png"
-dest_files=["res://.godot/imported/tile_maca.png-dd1f984cdd36bac3d1b6da47f8c03b8a.ctex"]
+source_file="res://sprites/fence.png"
+dest_files=["res://.godot/imported/fence.png-24ed3f51ca1697467c6969f2bdfb1048.ctex"]
 
 [params]
 

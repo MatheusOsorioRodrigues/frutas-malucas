@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bh6p3mk2qusbn"]
 
-[ext_resource type="Texture2D" uid="uid://cd1ms2q7x42l2" path="res://sprites/2 Owlet_Monster/Owlet_Monster_Idle_4.png" id="1_32t2c"]
+[ext_resource type="Texture2D" uid="uid://c04v4741hool6" path="res://sprites/Characters/Owlet_Monster/Owlet_Monster_Idle_4.png" id="1_32t2c"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_p2o1r"]
 

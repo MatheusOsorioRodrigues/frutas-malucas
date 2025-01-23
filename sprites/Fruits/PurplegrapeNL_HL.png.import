@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ced36c1ugj40n"
-path="res://.godot/imported/Owlet_Monster_Push_6.png-80154845d4ae820300825fffbc40b6d7.ctex"
+uid="uid://dq7yfewowl850"
+path="res://.godot/imported/PurplegrapeNL_HL.png-fd0b6dc90694ad911e31bdf69906166a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Characters/2 Owlet_Monster/Owlet_Monster_Push_6.png"
-dest_files=["res://.godot/imported/Owlet_Monster_Push_6.png-80154845d4ae820300825fffbc40b6d7.ctex"]
+source_file="res://sprites/Fruits/PurplegrapeNL_HL.png"
+dest_files=["res://.godot/imported/PurplegrapeNL_HL.png-fd0b6dc90694ad911e31bdf69906166a.ctex"]
 
 [params]
 

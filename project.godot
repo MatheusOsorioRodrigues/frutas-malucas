@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="15tile"
-run/main_scene="res://scene/menu.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/name="frutasmalucas"
+run/main_scene="res://scenes/menu.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -23,11 +23,11 @@ Global="*res://global.gd"
 
 window/size/viewport_width=90
 window/size/viewport_height=160
-window/size/window_width_override=360
-window/size/window_height_override=640
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 window/handheld/orientation=1
 
 [rendering]
 
+renderer/rendering_method="mobile"
 textures/vram_compression/import_etc2_astc=true

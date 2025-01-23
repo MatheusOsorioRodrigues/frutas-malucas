@@ -1,12 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://o3ngn8x5fefs"]
+[gd_scene load_steps=11 format=3 uid="uid://o3ngn8x5fefs"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_akkna"]
 [ext_resource type="Script" path="res://scripts/board.gd" id="2_3yvai"]
-[ext_resource type="Texture2D" uid="uid://t0tv4v10k757" path="res://sprites/Fruits/AppleNL_HL.png" id="4_5h56f"]
-[ext_resource type="Texture2D" uid="uid://reo112r73shn" path="res://sprites/Fruits/Purple_grapeNL_HL.png" id="5_fxgny"]
-[ext_resource type="Texture2D" uid="uid://7idl58t33w3m" path="res://sprites/Fruits/BananaNL_HL.png" id="6_y6ied"]
-[ext_resource type="Texture2D" uid="uid://bxtfsmdal5hne" path="res://sprites/Fruits/PearNL_HL.png" id="7_vuw7p"]
-[ext_resource type="Texture2D" uid="uid://clu1ytu3y4t6q" path="res://sprites/Tiles/tileResoluçãoOriginal.png" id="7_xa5qi"]
+[ext_resource type="Texture2D" uid="uid://nhwrnx1rcv5b" path="res://back20por9.jpg" id="2_lxn7i"]
+[ext_resource type="Texture2D" uid="uid://c16ip86seu03y" path="res://sprites/Fruits/AppleNL_HL.png" id="4_5h56f"]
+[ext_resource type="Texture2D" uid="uid://dq7yfewowl850" path="res://sprites/Fruits/PurplegrapeNL_HL.png" id="5_fxgny"]
+[ext_resource type="Texture2D" uid="uid://c2dmusp4hbi4k" path="res://sprites/Fruits/BananaNL_HL.png" id="6_y6ied"]
+[ext_resource type="Texture2D" uid="uid://b8tyfj5myol4l" path="res://sprites/Fruits/PearNL_HL.png" id="7_vuw7p"]
+[ext_resource type="Texture2D" uid="uid://c41n4ryj44ylk" path="res://sprites/Tiles/tileResolucaoOriginal.png" id="7_xa5qi"]
+
+[sub_resource type="GDScript" id="GDScript_afehn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nq1ux"]
 size = Vector2(84, 84)
@@ -17,6 +20,13 @@ script = ExtResource("1_akkna")
 [node name="Board" type="Area2D" parent="."]
 position = Vector2(3, 42)
 script = ExtResource("2_3yvai")
+
+[node name="Background" type="Sprite2D" parent="Board"]
+texture_filter = 1
+position = Vector2(42, 58)
+scale = Vector2(0.106, 0.106)
+texture = ExtResource("2_lxn7i")
+script = SubResource("GDScript_afehn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Board"]
 position = Vector2(42, 42)
@@ -138,7 +148,16 @@ texture = ExtResource("7_xa5qi")
 
 [node name="Node2D" type="Node2D" parent="Board/FundosPeca"]
 
-[node name="Tile1" type="Sprite2D" parent="Board"]
+[node name="Frutas" type="Node2D" parent="Board"]
+
+[node name="Tile0" type="Sprite2D" parent="Board/Frutas"]
+modulate = Color(1, 1, 1, 0.392157)
+texture_filter = 1
+position = Vector2(73.5, 73.5)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("7_xa5qi")
+
+[node name="Tile1" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(10.5, 10.5)
 scale = Vector2(0.5, 0.5)
@@ -146,7 +165,7 @@ texture = ExtResource("4_5h56f")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile2" type="Sprite2D" parent="Board"]
+[node name="Tile2" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(31.5, 10.5)
 scale = Vector2(0.5, 0.5)
@@ -154,7 +173,7 @@ texture = ExtResource("4_5h56f")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile3" type="Sprite2D" parent="Board"]
+[node name="Tile3" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(52.5, 10.5)
 scale = Vector2(0.5, 0.5)
@@ -162,7 +181,7 @@ texture = ExtResource("4_5h56f")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile4" type="Sprite2D" parent="Board"]
+[node name="Tile4" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(73.5, 10.5)
 scale = Vector2(0.5, 0.5)
@@ -170,7 +189,7 @@ texture = ExtResource("4_5h56f")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile5" type="Sprite2D" parent="Board"]
+[node name="Tile5" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(10.5, 31.5)
 scale = Vector2(0.5, 0.5)
@@ -178,7 +197,7 @@ texture = ExtResource("5_fxgny")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile6" type="Sprite2D" parent="Board"]
+[node name="Tile6" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(31.5, 31.5)
 scale = Vector2(0.5, 0.5)
@@ -186,7 +205,7 @@ texture = ExtResource("5_fxgny")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile7" type="Sprite2D" parent="Board"]
+[node name="Tile7" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(52.5, 31.5)
 scale = Vector2(0.5, 0.5)
@@ -194,7 +213,7 @@ texture = ExtResource("5_fxgny")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile8" type="Sprite2D" parent="Board"]
+[node name="Tile8" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(73.5, 31.5)
 scale = Vector2(0.5, 0.5)
@@ -202,7 +221,7 @@ texture = ExtResource("5_fxgny")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile9" type="Sprite2D" parent="Board"]
+[node name="Tile9" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(10.5, 52.5)
 scale = Vector2(0.5, 0.5)
@@ -210,7 +229,7 @@ texture = ExtResource("6_y6ied")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile10" type="Sprite2D" parent="Board"]
+[node name="Tile10" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(31.5, 52.5)
 scale = Vector2(0.5, 0.5)
@@ -218,7 +237,7 @@ texture = ExtResource("6_y6ied")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile11" type="Sprite2D" parent="Board"]
+[node name="Tile11" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(52.5, 52.5)
 scale = Vector2(0.5, 0.5)
@@ -226,7 +245,7 @@ texture = ExtResource("6_y6ied")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile12" type="Sprite2D" parent="Board"]
+[node name="Tile12" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(73.5, 52.5)
 scale = Vector2(0.5, 0.5)
@@ -234,7 +253,7 @@ texture = ExtResource("6_y6ied")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile13" type="Sprite2D" parent="Board"]
+[node name="Tile13" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(10.5, 73.5)
 scale = Vector2(0.5, 0.5)
@@ -242,7 +261,7 @@ texture = ExtResource("7_vuw7p")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile14" type="Sprite2D" parent="Board"]
+[node name="Tile14" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(31.5, 73.5)
 scale = Vector2(0.5, 0.5)
@@ -250,20 +269,13 @@ texture = ExtResource("7_vuw7p")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
 
-[node name="Tile15" type="Sprite2D" parent="Board"]
+[node name="Tile15" type="Sprite2D" parent="Board/Frutas"]
 texture_filter = 1
 position = Vector2(52.5, 73.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_vuw7p")
 region_enabled = true
 region_rect = Rect2(-4, -4, 40, 40)
-
-[node name="Tile16" type="Sprite2D" parent="Board"]
-modulate = Color(1, 1, 1, 0.392157)
-texture_filter = 1
-position = Vector2(73.5, 73.5)
-scale = Vector2(0.035, 0.035)
-texture = ExtResource("7_xa5qi")
 
 [node name="Character" type="Node2D" parent="."]
 position = Vector2(45, 20)

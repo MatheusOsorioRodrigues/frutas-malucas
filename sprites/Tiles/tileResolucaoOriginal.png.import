@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cybma7y3nhn2c"
-path="res://.godot/imported/Owlet_Monster_Throw_4.png-4fb8afce1af099f4f85e2b80c8f71eae.ctex"
+uid="uid://c41n4ryj44ylk"
+path="res://.godot/imported/tileResolucaoOriginal.png-520b12737411394fb0d4cb325c46cb36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Characters/2 Owlet_Monster/Owlet_Monster_Throw_4.png"
-dest_files=["res://.godot/imported/Owlet_Monster_Throw_4.png-4fb8afce1af099f4f85e2b80c8f71eae.ctex"]
+source_file="res://sprites/Tiles/tileResolucaoOriginal.png"
+dest_files=["res://.godot/imported/tileResolucaoOriginal.png-520b12737411394fb0d4cb325c46cb36.ctex"]
 
 [params]
 

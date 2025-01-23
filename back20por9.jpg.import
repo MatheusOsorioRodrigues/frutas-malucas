@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://be8f2aympqlwf"
-path="res://.godot/imported/tile1_maca.png-51beb52061dffa3e69be9d239cd8b29d.ctex"
+uid="uid://nhwrnx1rcv5b"
+path="res://.godot/imported/back20por9.jpg-b1984261ad034e14fbe7aa93c1d5606d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Tiles/tile1_maca.png"
-dest_files=["res://.godot/imported/tile1_maca.png-51beb52061dffa3e69be9d239cd8b29d.ctex"]
+source_file="res://back20por9.jpg"
+dest_files=["res://.godot/imported/back20por9.jpg-b1984261ad034e14fbe7aa93c1d5606d.ctex"]
 
 [params]
 
