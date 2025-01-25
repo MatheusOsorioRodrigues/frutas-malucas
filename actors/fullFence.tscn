@@ -144,6 +144,7 @@ func build_fence():
 "
 
 [node name="Fence" type="Node2D"]
+texture_filter = 1
 script = SubResource("GDScript_1t8t6")
 
 [node name="TileMap" type="TileMap" parent="."]

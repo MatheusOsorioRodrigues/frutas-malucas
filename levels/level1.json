@@ -1,0 +1,15 @@
+{
+	"size": 2,
+	"map": [
+		"Grape1", "Apple1", 
+		"Apple2", "Empty"
+	],
+	"solved": [
+		["Apple1", "Apple2"],
+		["Grape1", "Empty"]
+	],
+	"restrictions": [
+		"free", "free",
+		"free", "free",
+	],
+}
