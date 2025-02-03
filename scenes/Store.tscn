@@ -1,0 +1,106 @@
+[gd_scene load_steps=5 format=3 uid="uid://ngoqd76c88by"]
+
+[ext_resource type="Texture2D" uid="uid://c16ip86seu03y" path="res://sprites/Fruits/AppleNL_HL.png" id="1_53l8d"]
+[ext_resource type="Script" path="res://scripts/charstore.gd" id="1_n7n76"]
+[ext_resource type="Script" path="res://scripts/Store.gd" id="1_xn2ga"]
+[ext_resource type="Texture2D" uid="uid://c2dmusp4hbi4k" path="res://sprites/Fruits/BananaNL_HL.png" id="2_bypkt"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n7n76")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.352941, 1, 1, 1)
+
+[node name="TabContainer" type="TabContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 0
+
+[node name="char" type="TabBar" parent="ColorRect/TabContainer"]
+layout_mode = 2
+script = ExtResource("1_xn2ga")
+metadata/_tab_index = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect/TabContainer/char"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = -3.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="storecontrol" type="Node2D" parent="ColorRect/TabContainer/char/RichTextLabel"]
+
+[node name="Panel" type="Panel" parent="ColorRect/TabContainer/char/RichTextLabel/storecontrol"]
+offset_left = 15.0
+offset_top = 1.0
+offset_right = 67.0
+offset_bottom = 84.0
+
+[node name="Button" type="Button" parent="ColorRect/TabContainer/char/RichTextLabel/storecontrol/Panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 48.0
+offset_right = 46.0
+offset_bottom = 79.0
+text = "Buy"
+
+[node name="AppleNlHl" type="Sprite2D" parent="ColorRect/TabContainer/char/RichTextLabel/storecontrol"]
+position = Vector2(41, 26)
+texture = ExtResource("1_53l8d")
+
+[node name="Panel2" type="Panel" parent="ColorRect/TabContainer/char/RichTextLabel/storecontrol"]
+offset_left = 76.0
+offset_top = 1.0
+offset_right = 128.0
+offset_bottom = 84.0
+
+[node name="Button" type="Button" parent="ColorRect/TabContainer/char/RichTextLabel/storecontrol/Panel2"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 48.0
+offset_right = 46.0
+offset_bottom = 79.0
+text = "Buy"
+
+[node name="BananaNlHl" type="Sprite2D" parent="ColorRect/TabContainer/char/RichTextLabel/storecontrol/Panel2"]
+position = Vector2(24, 27)
+texture = ExtResource("2_bypkt")
+
+[node name="HScrollBar" type="HScrollBar" parent="ColorRect/TabContainer/char"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 91.0
+offset_right = 1.0
+step = 30.0
+page = 20.0
+
+[node name="storeheader" type="Label" parent="."]
+layout_mode = 0
+offset_right = 89.0
+offset_bottom = 24.0
+text = "Store"
+horizontal_alignment = 1
