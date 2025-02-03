@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://0mlmgp1fuime"]
+[gd_scene load_steps=11 format=3 uid="uid://0mlmgp1fuime"]
 
 [ext_resource type="Script" path="res://scripts/select.gd" id="1_61ffd"]
 [ext_resource type="PackedScene" uid="uid://cqmd1qmmodljl" path="res://actors/capuz.tscn" id="1_fiabd"]
 [ext_resource type="PackedScene" uid="uid://bh6p3mk2qusbn" path="res://actors/owlet.tscn" id="2_awmdx"]
 [ext_resource type="Texture2D" uid="uid://chjospyhrxfhj" path="res://sprites/Bordas.png" id="2_x25if"]
+[ext_resource type="Texture2D" uid="uid://6luqqlfto6d4" path="res://music/icon.png" id="5_iim68"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iyi4a"]
 atlas = ExtResource("2_x25if")
@@ -61,3 +62,13 @@ position = Vector2(67, 77)
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="2"]
 position = Vector2(65.5, 80)
 shape = SubResource("RectangleShape2D_l0k26")
+
+[node name="SongIcon" type="Sprite2D" parent="."]
+position = Vector2(77, 12)
+scale = Vector2(0.0185547, 0.0187989)
+texture = ExtResource("5_iim68")
+
+[node name="Mute" type="Button" parent="SongIcon"]
+offset_right = 8.0
+offset_bottom = 8.0
+metadata/_edit_use_anchors_ = true

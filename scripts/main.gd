@@ -5,6 +5,8 @@ extends Area2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	MusicGame.play_music_level()
+	#inicia a musica.
 	#if Global.personagem_selecionado != null:
 	#	var spawn_point = $Character
 	

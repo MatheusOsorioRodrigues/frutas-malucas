@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://o3ngn8x5fefs"]
+[gd_scene load_steps=7 format=3 uid="uid://o3ngn8x5fefs"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_akkna"]
 [ext_resource type="Script" path="res://scripts/board.gd" id="2_3yvai"]
 [ext_resource type="Texture2D" uid="uid://nhwrnx1rcv5b" path="res://back20por9.jpg" id="3_t0mri"]
+[ext_resource type="Texture2D" uid="uid://6luqqlfto6d4" path="res://music/icon.png" id="4_4preq"]
 
 [sub_resource type="GDScript" id="GDScript_8k6gi"]
 
@@ -36,3 +37,13 @@ position = Vector2(45, 20)
 
 [node name="Username" type="Node2D" parent="."]
 position = Vector2(36, 1)
+
+[node name="SongIcon" type="Sprite2D" parent="."]
+position = Vector2(77, 12)
+scale = Vector2(0.0185547, 0.0187989)
+texture = ExtResource("4_4preq")
+
+[node name="Mute" type="Button" parent="SongIcon"]
+offset_right = 8.0
+offset_bottom = 8.0
+metadata/_edit_use_anchors_ = true

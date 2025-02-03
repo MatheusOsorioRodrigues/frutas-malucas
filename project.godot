@@ -18,10 +18,11 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://global.gd"
+MusicGame="*res://scripts/music_game.gd"
 
 [display]
 
-window/size/viewport_width=90
+window/size/viewport_width=85
 window/size/viewport_height=160
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"

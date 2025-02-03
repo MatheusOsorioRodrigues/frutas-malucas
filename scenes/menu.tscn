@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cgtvqvib7cxd4"]
+[gd_scene load_steps=3 format=3 uid="uid://cgtvqvib7cxd4"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_vta66"]
+[ext_resource type="Texture2D" uid="uid://6luqqlfto6d4" path="res://music/icon.png" id="2_s4oyd"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -32,6 +33,16 @@ text = "Options"
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
+
+[node name="SongIcon" type="Sprite2D" parent="."]
+position = Vector2(75, 11)
+scale = Vector2(0.0185547, 0.0187989)
+texture = ExtResource("2_s4oyd")
+
+[node name="Mute" type="Button" parent="SongIcon"]
+offset_right = 8.0
+offset_bottom = 8.0
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]

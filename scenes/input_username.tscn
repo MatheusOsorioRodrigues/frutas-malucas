@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwn261bb4arr5"]
+[gd_scene load_steps=3 format=3 uid="uid://cwn261bb4arr5"]
 
 [ext_resource type="Script" path="res://scripts/input_username.gd" id="1_yoccs"]
+[ext_resource type="Texture2D" uid="uid://6luqqlfto6d4" path="res://music/icon.png" id="2_c0n3p"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_yoccs")
@@ -24,5 +25,15 @@ offset_right = 40.0
 offset_bottom = 23.0
 scale = Vector2(0.3, 0.3)
 horizontal_alignment = 1
+
+[node name="SongIcon" type="Sprite2D" parent="."]
+position = Vector2(77, 12)
+scale = Vector2(0.0185547, 0.0187989)
+texture = ExtResource("2_c0n3p")
+
+[node name="Mute" type="Button" parent="SongIcon"]
+offset_right = 8.0
+offset_bottom = 8.0
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
